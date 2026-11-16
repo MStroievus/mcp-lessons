@@ -29,6 +29,7 @@ const { content } = LANGUAGES[language];
 const loadToolLesson = () => import('./core/tool-lesson/tool-lesson.ts').then(({ createToolLesson }) => createToolLesson());
 const lessons = new LessonStore([{ info: TOOL_LESSON, load: loadToolLesson }], new SandboxWords(content.sandbox));
 document.documentElement.lang = language;
+window.addEventListener('vite:preloadError', () => location.reload());
 
 createApp(App)
     .provide(CONTENT, content)

@@ -1,4 +1,3 @@
-import type { HandlerParam } from '../sandbox-models.ts';
 import { error, text } from './tool-result.ts';
 
 const CITIES = [
@@ -14,11 +13,6 @@ const CITIES = [
 ];
 
 const label = (city: (typeof CITIES)[number]) => `${city.name}, ${city.countryName} (${city.country})`;
-
-export const HANDLER_PARAMETERS: HandlerParam[] = [
-    { name: 'city', type: 'string', required: true },
-    { name: 'country', type: 'string', required: false }
-];
 
 export class WeatherService {
     lookup(args: Record<string, unknown>) {

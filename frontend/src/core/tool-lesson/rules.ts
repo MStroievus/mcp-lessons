@@ -1,7 +1,7 @@
 import type { ToolDraft, ToolParameter as Parameter } from '../sandbox-models.ts';
 import { showsCountryCode } from './country-format.ts';
 import { Rule } from './rule.ts';
-import { HANDLER_PARAMETERS } from './weather-service.ts';
+import { HANDLER_PARAMETERS } from './lesson-info.ts';
 
 const TOOL_NAME = /^[A-Za-z0-9._-]+$/;
 

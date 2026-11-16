@@ -152,7 +152,10 @@ export class SandboxStore extends Review {
     }
 
     #ready() {
-        this.#lesson ??= this.#load();
+        this.#lesson ??= this.#load().catch((error: unknown) => {
+            this.#lesson = undefined;
+            throw error;
+        });
         return this.#lesson;
     }
 
