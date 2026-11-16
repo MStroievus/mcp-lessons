@@ -13,7 +13,7 @@ export class Rule {
         this.#find = find;
     }
 
-    check(draft: ToolDraft): Finding[] {
+    check(draft: ToolDraft) {
         return this.#find(draft).map(found => ({ rule: this.id, level: this.level, ...found }));
     }
 }

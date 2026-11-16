@@ -1,6 +1,6 @@
 import { Client, StreamableHTTPClientTransport } from '@modelcontextprotocol/client';
 import { createMcpHandler, McpServer } from '@modelcontextprotocol/server';
-import * as z from 'zod';
+import { z } from 'zod';
 
 import type { ToolDraft } from '../sandbox-models.ts';
 import type { WeatherService } from './weather-service.ts';

@@ -1,4 +1,4 @@
-import * as z from 'zod';
+import { z } from 'zod';
 
 import type { RunEvent, ThoughtPart as Thought } from '../sandbox-models.ts';
 import { statesCountryCode } from './country-format.ts';

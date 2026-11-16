@@ -13,7 +13,6 @@ import { TOOL_LESSON } from '../core/tool-lesson/lesson-info.ts';
 import { Film } from '../film/film.ts';
 import { toolFilmScenes } from './tool-film/scenes.ts';
 
-
 interface Step {
     id: string;
     module: string;
